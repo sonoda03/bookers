@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   #get '/top' => 'homes#top'
-  get '/' => 'homes#top'
+  root to: 'homes#top'
 
   # get 'books/new'
   # get 'books/index'
@@ -8,4 +8,4 @@ Rails.application.routes.draw do
   # get 'books/edit'
   
   resources :books
-end
+  end
